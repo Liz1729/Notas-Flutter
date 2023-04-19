@@ -1,0 +1,115 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  final appTitle = 'LILO SHOP';
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: appTitle,
+      theme: ThemeData(primarySwatch: Colors.purple),
+      home: Scaffold(
+        body: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      "https://previews.123rf.com/images/nadiinko/nadiinko1712/nadiinko171200092/92012607-fondo-de-vector-de-brillo-p%C3%BArpura-violeta-de-patrones-sin-fisuras-para-vedding-invitaci%C3%B3n-banner.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 50,
+              child: Image.network(
+                'https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/326966842_1899017563776615_8117676163056322389_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeG90ip9EA9bNy0oV1whyGo8pNT-fJDNrpGk1P58kM2ukQh8AbQPvicPd1enpyk_kqGg_4P8ITffSkkFiaQBBMfh&_nc_ohc=CNvtb72ScMEAX_Y7Bqz&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDb8GV05j0YSs-H1z4ZJ7bX1GezvLyfqwcTp6v0O98ydA&oe=64433A91',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 250,
+              child: Image.network(
+                'https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/326802074_586068539524255_2170279672431115844_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFLm3lWrXRJ1nEuz9odnXI568MoGxh0YAjrwygbGHRgCO-NoefgGpjMYFSnkfbju4QNTbgZ1mu9qqRGR3gOAIyx&_nc_ohc=1BIMVfXBLLQAX_wrYaT&_nc_ht=scontent.fmid1-3.fna&oh=00_AfAYNZIA0bYOj0ux8d26w6Ut5X2BYwiyUQaN4F9KkM9Iaw&oe=6444DCA3',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 450,
+              child: Image.network(
+                'https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/326986494_732276348504411_3399856650720922699_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEMR7hv79dSOUFCNro8iMMwDoupbdT1dgYOi6lt1PV2Bq7-pVVECZ2W83cNFY4lytkbzPmGSVerxzhhOR7q1Iqz&_nc_ohc=KwhNVBHpSOMAX84mQm3&_nc_ht=scontent.fmid1-3.fna&oh=00_AfCR8CXBkr4fi_HWBmf5U9Fhv8SaxmGf4CaV-tO-_uqo9g&oe=644372DA',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 650,
+              child: Image.network(
+                'https://scontent.fmid1-2.fna.fbcdn.net/v/t39.30808-6/326082002_844943343466514_7501831000028390997_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFUMNMcKNe73lwU74AOtHQnm8fs-on8U6ibx-z6ifxTqKOYYnSGJPoOby5ebaprPkPvq-aidYOVASgEb7qmR0hk&_nc_ohc=r9XfDn_Dp8wAX_iM2IG&_nc_ht=scontent.fmid1-2.fna&oh=00_AfDJWYZWu-fepN1atCuo64UBL4SHsoRkbWC3_L6XU53c0Q&oe=644471F5',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 850,
+              child: Image.network(
+                'https://scontent.fmid1-2.fna.fbcdn.net/v/t39.30808-6/327161203_548223947237280_2527588990062651157_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHsx1v278sC7PL5Z21I-pcxFaZcBfHAPUMVplwF8cA9Q_lBdbzzryt1e7hoBewWzN4XJf9CJTO9l4wmitzj4X6W&_nc_ohc=wTQakuXPYvUAX_QczzP&_nc_ht=scontent.fmid1-2.fna&oh=00_AfAUfzHI6INOND5LConrLLPNePcUiaO4SBO0gkUaOEUSoA&oe=64449884',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 1050,
+              child: Image.network(
+                'https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/326564237_1225970638013187_1270970829032970698_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEiFfxa946YDJMRZbcb-kDfLE8KxOKo1xYsTwrE4qjXFs9fo9HjFtAX9Nlff6pXfh4fst9GnANSJCzNnVEILHGi&_nc_ohc=Q8alKkD7K1gAX9AtGrb&_nc_ht=scontent.fmid1-4.fna&oh=00_AfAeD7Yx0CpVDiTiiuqzi7vvp15YbNUtxggS4GbevTvRag&oe=6443769A',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 250,
+              left: 50,
+              child: Image.network(
+                'https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/326956090_1341559899978451_47505976278410716_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFJ-nLoltFZfQBA5c_vp8HtahKtyVfrrK5qEq3JV-usrvaAbBjrsowjrLNgUg-Mvu7YeA2DZlgCzayEEKYok4ec&_nc_ohc=Ztvz_e9u4VEAX8y8qXO&_nc_ht=scontent.fmid1-3.fna&oh=00_AfB5tXIL3NY5xGmZQ4hOKRuU9Iqcu27wh-9jcQ_rz6jnlw&oe=6444A3B2',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 250,
+              left: 250,
+              child: Image.network(
+                'https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/326677038_490909859907797_6743349599171920077_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF6HQ6AaSuO8InpR0Z3APHhtuK8bc3_tvW24rxtzf-29UNDBQIPUmlCRRgrWSrgRrDyd8vQ8mPUHNfgm_xZ0nlL&_nc_ohc=ZpLStN1qRTgAX9G8UQM&_nc_ht=scontent.fmid1-3.fna&oh=00_AfAWdWn3tFcz6SSr4bM-Z5q2NUQ9XFU1CbdcTGrd3j1yqA&oe=6443F994',
+                width: 150,
+                height: 150,
+              ),
+            ),
+            Positioned(
+              top: 250,
+              left: 450,
+              child: Image.network(
+                'https://scontent.fmid1-2.fna.fbcdn.net/v/t39.30808-6/326993223_1607560326350549_1864724295031177229_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFcNWanagqrQBuLwiOqrDImxresB1LOvAPGt6wHUs68A5eza1eRATwubjg_GklujEbKdxU-jylYTZ6SjCgOoSLS&_nc_ohc=6X0QSg2sE2sAX-aDPNs&_nc_oc=AQnXavh0fzGQ9hBMm8xxD2Hdg_WPhBGxDIbgaDV-62L0mqk_AHfOoZ0SO4kkFrmCGlU&_nc_ht=scontent.fmid1-2.fna&oh=00_AfB2BlOch_Mxh3EvTR0AJQ02V_0aCBbx7zWnsUFJcRZf7A&oe=6444D085',
+                width: 150,
+                height: 150,
+              ),
+            ),
+          ],
+        ),
+        appBar: AppBar(
+          title: Text(appTitle),
+        ),
+      ),
+    );
+  }
+}
